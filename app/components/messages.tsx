@@ -7,9 +7,9 @@ export default function Messages({messageArray} : any) {
     let msg_date = new Date(Date.now());
     
     useEffect(() => {
-        let temp = [];  
+        let temp: React.JSX.Element[] = [];  
 
-        messageArray.forEach(element => {
+        messageArray.forEach((element: string) => {
             if (!element.includes(".gif")) {
                 temp.push(
                 <div className="flex items-center gap-2 m-2 ml-[16px] z-[10]" key={messageArray.indexOf(element)}>
