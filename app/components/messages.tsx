@@ -14,7 +14,7 @@ export default function Messages({messageArray} : any) {
                 temp.push(
                 <div className="flex items-center gap-2 m-2 ml-[16px] z-[10]" key={messageArray.indexOf(element)}>
                     <div className="flex items-center">
-                        <p className="text-sm text-black">{element}</p>
+                        <p className="text-sm font-roboto text-black">{element}</p>
                     </div>
                     <p className="text-xs place-self-end text-gray-500">{msg_date.getHours().toString()+':'+msg_date.getMinutes().toString()}</p>
                 </div>)
